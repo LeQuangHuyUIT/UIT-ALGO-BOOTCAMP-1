@@ -1,0 +1,23 @@
+{
+    "files.associations": {
+        "compare": "cpp",
+        "bitset": "cpp",
+        "set": "cpp",
+        "iomanip": "cpp",
+        "array": "cpp",
+        "string": "cpp",
+        "string_view": "cpp",
+        "ranges": "cpp",
+        "span": "cpp",
+        "tuple": "cpp",
+        "valarray": "cpp",
+        "*.tcc": "cpp",
+        "deque": "cpp",
+        "forward_list": "cpp",
+        "list": "cpp",
+        "vector": "cpp",
+        "system_error": "cpp",
+        "regex": "cpp",
+        "iostream": "cpp"
+    }
+}

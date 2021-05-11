@@ -1,0 +1,78 @@
+<p>Tr&ograve; chơi Minesweeper l&agrave; một tr&ograve; chơi nổi tiếng ra mắt lần đầu năm 1989. Trong tr&ograve; chơi, ch&uacute;ng ta c&oacute; một bảng chữ nhật <span class="math-tex">\(N \times M \)</span> &ocirc;, một số &ocirc; trong bảng c&oacute; thể l&agrave; m&igrave;n, một số &ocirc; l&agrave; &ocirc; an to&agrave;n. Nhiệm vụ của người chơi l&agrave; t&igrave;m v&agrave; đ&aacute;nh dấu tất cả c&aacute;c &ocirc; c&oacute; m&igrave;n, nếu người chơi đụng phải &ocirc; c&oacute; m&igrave;n th&igrave; sẽ ph&aacute;n l&agrave; thua, nếu t&igrave;m ra to&agrave;n bộ m&igrave;n v&agrave; ch&iacute;nh x&aacute;c th&igrave; chiến thắng.</p>
+
+<p>Cũng l&agrave; ng&agrave;y cuối tuần, nhưng c&acirc;u đố &quot;Hidden words&quot; đ&atilde; được Meow chơi ph&aacute; đảo. V&igrave; qu&aacute; ch&aacute;n n&ecirc;n c&ocirc; n&agrave;ng l&ocirc;i Minesweeper ra chơi. Sau khi chơi qu&aacute; 7749 lần, c&ocirc; đ&atilde; th&agrave;nh bậc thầy của tr&ograve; chơi, c&oacute; thể chiến thắng bất cứ chơi kiểu g&igrave; ... . C&ocirc; cảm thấy rất tự h&agrave;o về th&agrave;nh tựu n&agrave;y của m&igrave;nh, n&ecirc;n sẵn tiện viết một c&acirc;u đố để đố mọi người, nội dung c&acirc;u đố c&oacute; thể t&oacute;m tắt lại l&agrave;:</p>
+
+<ul>
+	<li>Cho một ma trận A k&iacute;ch thước <span class="math-tex">\(N \times M \)</span>, <span class="math-tex">\(A[x][y] = k\)</span> với &yacute; nghĩa l&agrave; c&oacute; <span class="math-tex">\(k
+\)</span> quả m&igrave;n nằm kề với &ocirc; <span class="math-tex">\((x, y)\)</span>(Lưu &yacute;: hai &ocirc; <span class="math-tex">\((x_1, y_1)\)</span> v&agrave; <span class="math-tex">\((x_2, y_2)
+\)</span> gọi l&agrave; kề khi <span class="math-tex">\(|x_1 - x_2| + |y_1 - y_2| = 1\)</span>)</li>
+	<li>Y&ecirc;u cầu h&atilde;y x&acirc;y dựng l&ecirc;n mảng B k&iacute;ch thước <span class="math-tex">\(N \times M \)</span> từ mảng A. <span class="math-tex">\(B[x][y] = 1\)</span> nếu c&oacute; m&igrave;n tại &ocirc; <span class="math-tex">\((x, y)\)</span>, ngược lại <span class="math-tex">\(B[x][y] = 0\)</span>. (xem v&iacute; dụ để hiểu r&otilde; hơn)</li>
+</ul>
+
+<p><strong>Đầu v&agrave;o:</strong></p>
+
+<ul>
+	<li>D&ograve;ng đầu gồm 2 số nguy&ecirc;n dương N, M l&agrave; k&iacute;ch thước của bảng</li>
+	<li>N d&ograve;ng tiếp theo, mỗi d&ograve;ng gồm M số nguy&ecirc;n, mỗi số nguy&ecirc;n c&oacute; gi&aacute; trị từ 0 đến 4 thể hiện số quả m&igrave;n nằm kề với</li>
+	<li>&nbsp;</li>
+</ul>
+
+<p><strong>Đầu ra:</strong></p>
+
+<ul>
+	<li>Nếu như tồn tại đ&aacute;p &aacute;n, ghi ra gồm N d&ograve;ng, mỗi d&ograve;ng gồm M k&yacute; tự thể hiện &ocirc; c&oacute; m&igrave;n l&agrave; &#39;1&#39; v&agrave; &ocirc; kh&ocirc;ng c&oacute; m&igrave;n l&agrave; &#39;0&#39;. Nếu c&oacute; nhiều đ&aacute;p &aacute;n thỏa m&atilde;n, c&oacute; thể ghi bất kỳ một đ&aacute;p &aacute;n</li>
+	<li>Dữ liệu đảm bảo lu&ocirc;n tồn tại đ&aacute;p &aacute;n&nbsp;</li>
+</ul>
+
+<p><strong>R&agrave;ng buộc:</strong></p>
+
+<ul>
+	<li><span class="math-tex">\(1 \leq N, M \leq 40\)</span></li>
+</ul>
+
+<p><strong>V&iacute; dụ:</strong></p>
+
+<table>
+	<tbody>
+		<tr>
+			<td colspan="1" rowspan="1">
+			<p style="text-align:center"><strong>Đầu v&agrave;o </strong></p>
+			</td>
+			<td colspan="1" rowspan="1">
+			<p style="text-align:center"><strong>Đầu ra </strong></p>
+			</td>
+			<td colspan="1" rowspan="1">
+			<p style="text-align:center"><strong>Giải th&iacute;ch </strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="1" rowspan="1">
+			<p>4 4</p>
+
+			<p>2 0 1 1</p>
+
+			<p>0 2 1 0</p>
+
+			<p>1 1 1 2</p>
+
+			<p>1 1 2 1</p>
+			</td>
+			<td colspan="1" rowspan="1">
+			<p>0 1 0 0</p>
+
+			<p>1 0 0 1</p>
+
+			<p>0 0 0 0</p>
+
+			<p>0 1 1 1</p>
+
+			<p>&nbsp;</p>
+			</td>
+			<td colspan="1" rowspan="1">
+			<p>Lấy kết quả t&iacute;nh ngược lại sẽ ra input</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>

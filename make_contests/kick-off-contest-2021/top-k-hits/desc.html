@@ -1,0 +1,91 @@
+<p>Trang nghe nhạc trực tuyến ZingMPX&nbsp;vừa ra mắt t&iacute;nh năng gợi &yacute; b&agrave;i h&aacute;t cho người d&ugrave;ng. Khi một người sử dụng trang web, họ sẽ được gợi &yacute; cho những b&agrave;i h&aacute;t m&agrave; &quot;c&oacute; thể y&ecirc;u th&iacute;ch&quot;. Thuật to&aacute;n đằng sau t&iacute;nh năng n&agrave;y th&igrave; đa dạng, một trong số đ&oacute; c&oacute; thể l&agrave; việc dựa v&agrave;o b&igrave;nh chọn của người d&ugrave;ng.</p>
+
+<p>Cụ thể h&oacute;a b&agrave;i to&aacute;n, giả sử ta c&oacute; N b&agrave;i h&aacute;t, đ&aacute;nh chỉ số từ 1 đến N, ban đầu mỗi b&agrave;i h&aacute;t chưa c&oacute; b&igrave;nh chọn n&agrave;o.</p>
+
+<p>Ph&iacute;a người d&ugrave;ng, khi tiến h&agrave;nh b&igrave;nh chọn, họ c&oacute; thao t&aacute;c sau:</p>
+
+<ul>
+	<li>B&igrave;nh chọn cho c&aacute;c b&agrave;i h&aacute;t c&oacute; chỉ số từ l đến r, mỗi b&agrave;i h&aacute;t cho v điểm (tức score[i] += v với (l &lt;= i &lt;= r))</li>
+</ul>
+
+<p>Ph&iacute;a hệ thống, mỗi khi gợi &yacute; b&agrave;i h&aacute;t cho người d&ugrave;ng, họ c&oacute; thao t&aacute;c sau:</p>
+
+<ul>
+	<li>T&iacute;nh top k b&agrave;i h&aacute;t được y&ecirc;u th&iacute;ch nhất tại thời điểm hiện tại, trả về chỉ số của k b&agrave;i h&aacute;t. (Lưu &yacute;: B&agrave;i h&aacute;t c&oacute; điểm c&agrave;ng cao th&igrave; c&agrave;ng được y&ecirc;u th&iacute;ch, nếu c&oacute; 2 b&agrave;i h&aacute;t c&oacute; điểm bằng nhau th&igrave; b&agrave;i h&aacute;t c&oacute; chỉ số lớn hơn sẽ được y&ecirc;u th&iacute;ch hơn)</li>
+</ul>
+
+<p>Một ng&agrave;y đẹp trời, ph&iacute;a server hệ thống bị sập, chỉ c&ograve;n lại tập logs lưu trữ th&ocirc;ng tin c&aacute;c thao t&aacute;c m&agrave; ph&iacute;a người d&ugrave;ng v&agrave; ph&iacute;a server đ&atilde; thực hiện theo thứ tự. Bạn h&atilde;y viết chương tr&igrave;nh dựa v&agrave;o tập logs kh&ocirc;i phục lại hệ thống! Cụ thể h&atilde;y x&acirc;y dựng một cấu tr&uacute;c đọc logs, với mỗi thao t&aacute;c b&igrave;nh chọn của người d&ugrave;ng th&igrave; tăng điểm của mỗi b&agrave;i h&aacute;t l&ecirc;n, c&ograve;n với mỗi thao t&aacute;c t&iacute;nh top k của hệ thống th&igrave; trả về tập k b&agrave;i h&aacute;t được y&ecirc;u th&iacute;ch nhất.</p>
+
+<p><strong>Đầu v&agrave;o:</strong></p>
+
+<ul>
+	<li>D&ograve;ng đầu gồm 2 số nguy&ecirc;n dương N v&agrave; Q, l&agrave; số b&agrave;i h&aacute;t v&agrave; số lượng thao t&aacute;c c&oacute; trong logs</li>
+	<li>Q d&ograve;ng tiếp theo, mỗi d&ograve;ng c&oacute; định dạng:</li>
+</ul>
+
+<ul>
+	<li>&quot;1 l r v&quot; với &yacute; nghĩa b&igrave;nh chọn cho c&aacute;c b&agrave;i h&aacute;t c&oacute; chỉ số từ l đến r, mỗi b&agrave;i h&aacute;t tăng l&ecirc;n v điểm</li>
+	<li>&quot;2 k&quot;, với &yacute; nghĩa trả về k b&agrave;i h&aacute;t được y&ecirc;u th&iacute;ch nhất t&iacute;nh đến thời điểm hiện tại</li>
+</ul>
+
+<p><strong>Đầu ra:</strong></p>
+
+<ul>
+	<li>Gồm một số d&ograve;ng, l&agrave; kết quả của mỗi thao t&aacute;c loại 2. Mỗi d&ograve;ng ghi ra k số tương ứng k b&agrave;i h&aacute;t được y&ecirc;u th&iacute;ch nhất</li>
+</ul>
+
+<p><strong>R&agrave;ng buộc:</strong></p>
+
+<ul>
+	<li><span class="math-tex">\(1 \leq N, Q \leq 50000\)</span></li>
+	<li><span class="math-tex">\(1 \leq l \leq r \leq N\)</span></li>
+	<li><span class="math-tex">\(-10^9 \leq v \leq 10^9\)</span></li>
+	<li><span class="math-tex">\(1 \leq k \leq 5\)</span></li>
+</ul>
+
+<p><strong>V&iacute; dụ:</strong></p>
+
+<table>
+	<tbody>
+		<tr>
+			<td colspan="1" rowspan="1">
+			<p style="text-align:center"><strong>Đầu v&agrave;o </strong></p>
+			</td>
+			<td colspan="1" rowspan="1">
+			<p style="text-align:center"><strong>Đầu ra </strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="1" rowspan="1">
+			<p>7 8</p>
+
+			<p>2 3</p>
+
+			<p>1 1 5 5</p>
+
+			<p>1 2 6 -7</p>
+
+			<p>2 4</p>
+
+			<p>1 7 7 9</p>
+
+			<p>2 3</p>
+
+			<p>1 1 2 15</p>
+
+			<p>2 5</p>
+			</td>
+			<td colspan="1" rowspan="1">
+			<p>7 6 5</p>
+
+			<p>1 7 5 4</p>
+
+			<p>7 1 5</p>
+
+			<p>1 2 7 5 4</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>

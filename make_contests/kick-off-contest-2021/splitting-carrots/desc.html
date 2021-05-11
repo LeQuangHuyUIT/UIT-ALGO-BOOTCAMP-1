@@ -1,0 +1,75 @@
+<p>Yin v&agrave; Yang c&oacute; N củ c&agrave; rốt, mỗi củ c&agrave; rốt c&oacute; một khối lượng nhất định. Họ muốn chia số c&agrave; rốt n&agrave;y ra l&agrave;m 2 phần bằng nhau về khối lượng (sao cho mỗi củ c&agrave; rốt thuộc ho&agrave;n to&agrave;n về một người, kh&ocirc;ng cắt ra), nhưng họ kh&ocirc;ng biết n&ecirc;n chia như thế n&agrave;o. Ch&iacute;nh v&igrave; vậy, họ đ&atilde; t&igrave;m đến S&oacute;i Ako để gi&uacute;p bọn họ chia.</p>
+
+<p>S&oacute;i Ako l&agrave; một con s&oacute;i, t&iacute;nh t&igrave;nh lo&agrave;i s&oacute;i, cả th&aacute;ng chỉ ăn rau, thật qu&aacute; đ&oacute;i. Thấy hai bạn thỏ hồn nhi&ecirc;n, cũng tiện đ&agrave; gi&uacute;p một phen, tuy nhi&ecirc;n .. l&agrave; gi&uacute;p hai bạn thỏ kh&ocirc;ng thể chia được c&agrave; rốt th&agrave;nh 2 phần theo đ&uacute;ng y&ecirc;u cầu của họ. Để l&agrave;m được việc đ&oacute;, l&atilde;o cố gắng chọn ra một số củ c&agrave; rốt để những củ c&agrave; rốt c&ograve;n lại kh&ocirc;ng thể ph&acirc;n chia th&agrave;nh 2 phần thỏa y&ecirc;u cầu. V&igrave; tr&aacute;nh bị ch&uacute; &yacute;, l&atilde;o cố gắng lấy &iacute;t củ c&agrave; rốt nhất c&oacute; thể. Mục đ&iacute;ch của l&atilde;o l&agrave; l&agrave;m cho Yin v&agrave; Yang trong l&uacute;c loay hoay ph&acirc;n chia c&agrave; rốt kh&ocirc;ng được, sẽ đi lấy giấy thừng v&agrave; đun nước s&ocirc;i, ...</p>
+
+<p>Giả sử l&atilde;o s&oacute;i đ&atilde; th&agrave;nh c&ocirc;ng bắt Yin v&agrave; Yang, hỏi l&atilde;o đ&atilde; lấy ra &iacute;t nhất bao nhi&ecirc;u củ c&agrave; rốt, chỉ ra một cấu h&igrave;nh những củ c&agrave; rốt m&agrave; l&atilde;o s&oacute;i lấy!</p>
+
+<p><strong>Đầu v&agrave;o:</strong></p>
+
+<ul>
+	<li>D&ograve;ng đầu ti&ecirc;n gồm số củ c&agrave; rốt N</li>
+	<li>D&ograve;ng tiếp theo gồm N số nguy&ecirc;n dương. Số thứ i l&agrave; khối lượng của củ c&agrave; rốt thứ i. (chỉ số đ&aacute;nh từ 1)</li>
+</ul>
+
+<p><strong>Đầu ra:</strong></p>
+
+<ul>
+	<li>Nếu như kh&ocirc;ng tồn tại đ&aacute;p &aacute;n thỏa m&atilde;n, ghi &quot;NO_SOLUTION&quot;. Ngược lại:</li>
+	<li>D&ograve;ng đầu ti&ecirc;n l&agrave; số lượng củ c&agrave; rốt &iacute;t nhất X l&atilde;o s&oacute;i đ&atilde; lấy ra</li>
+	<li>Nếu X &gt; 0, d&ograve;ng tiếp theo gồm X số nguy&ecirc;n, l&agrave; chỉ số của những củ c&agrave; rốt l&atilde;o s&oacute;i lấy ra (nếu c&oacute; nhiều c&aacute;ch lấy thỏa m&atilde;n &iacute;t nhất th&igrave; ghi một c&aacute;ch bất kỳ)</li>
+</ul>
+
+<p><strong>R&agrave;ng buộc:</strong></p>
+
+<ul>
+	<li><span class="math-tex">\(1 \leq N \leq 100\)</span></li>
+	<li>Khối lượng của mỗi củ c&agrave; rốt kh&ocirc;ng qu&aacute; 2000</li>
+</ul>
+
+<p><strong>V&iacute; dụ:</strong></p>
+
+<table>
+	<tbody>
+		<tr>
+			<td colspan="1" rowspan="1">
+			<p style="text-align:center"><strong>Đầu v&agrave;o </strong></p>
+			</td>
+			<td colspan="1" rowspan="1">
+			<p style="text-align:center"><strong>Đầu ra </strong></p>
+			</td>
+			<td colspan="1" rowspan="1">
+			<p style="text-align:center"><strong>Giải th&iacute;ch </strong></p>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="1" rowspan="1">
+			<p>4</p>
+
+			<p>2 4 6 8</p>
+			</td>
+			<td colspan="1" rowspan="1">
+			<p>1</p>
+
+			<p>1</p>
+			</td>
+			<td colspan="1" rowspan="1">
+			<p>L&atilde;o s&oacute;i chỉ cần lấy ra củ c&agrave; rốt khối lượng 2, vậy th&igrave; kh&ocirc;ng c&oacute; c&aacute;ch chia n&agrave;o để chia những củ c&agrave; rốt c&ograve;n lại th&agrave;nh 2 phần bằng nhau về khối lượng. Giả sử nếu lấy ra củ c&agrave; rốt khối lượng 8 th&igrave; tồn tại c&aacute;ch chia (2, 4), (6)</p>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="1" rowspan="1">
+			<p>2</p>
+
+			<p>1 2</p>
+			</td>
+			<td colspan="1" rowspan="1">
+			<p>0</p>
+			</td>
+			<td colspan="1" rowspan="1">
+			<p>Kh&ocirc;ng cần lấy ra củ c&agrave; rốt n&agrave;o v&igrave; với đống c&agrave; rốt tr&ecirc;n kh&ocirc;ng c&oacute; c&aacute;ch n&agrave;o chia ra 2 phần bằng nhau về khối lượng</p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+<p>&nbsp;</p>
